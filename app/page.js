@@ -1,9 +1,9 @@
 import Hero from '@/components/Hero'
 import SearchBar from '@/components/SearchBar'
-import Filter from '@/components/Filter'
 import CarCard from '@/components/CarCard'
 import { fetchCars } from '@/utils'
-import { fuels, yearsOfProduction } from '@/constants'
+
+
 
 export default async function Home({searchParams}) {
   const allCars = await fetchCars(
@@ -28,10 +28,6 @@ export default async function Home({searchParams}) {
         </div>
         <div className='flex flex-col'>
           <SearchBar/>
-          <div className='flex gap-5'>
-            <Filter text="fuel" options={fuels}/>
-            <Filter text="year" options={yearsOfProduction}/>
-          </div>
         </div>
          {!apiIsEmpty ?(
           <section>
