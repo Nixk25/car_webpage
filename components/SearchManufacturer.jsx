@@ -18,7 +18,7 @@ const SearchManufacturer = ({ manufacturer, setManufacturer }) => {
             .includes(query.toLowerCase().replace(/\s+/g, ""))
         );
   return (
-    <div>
+    <div className="w-full">
       <Combobox value={manufacturer} onChange={setManufacturer}>
         <div className="relative mb-2">
           <div className=" relative flex items-center gap-5">
@@ -34,7 +34,7 @@ const SearchManufacturer = ({ manufacturer, setManufacturer }) => {
               placeholder="Volkswagen"
               displayValue={(manufacturer) => manufacturer}
               onChange={(e) => setQuery(e.target.value)}
-              className=" placeholder:pointer-events-none placeholder:select-none bg-slate-100 p-3 outline-none border rounded-lg border-transparent pl-10 w-min"
+              className=" placeholder:pointer-events-none placeholder:select-none bg-white p-3 outline-none border rounded-lg border-transparent pl-10  w-full"
             />
           </div>
           <Transition
@@ -45,7 +45,7 @@ const SearchManufacturer = ({ manufacturer, setManufacturer }) => {
               setQuery("");
             }}
           >
-            <Combobox.Options className="bg-slate-100 mt-1 max-h-20 rounded-lg w-full overflow-auto  text-base shadow-lg ring-1 ring-black ring-opacity-5 focus:outline-none sm:text-sm">
+            <Combobox.Options className="absolute z-10 bg-slate-100 mt-1 max-h-20 rounded-lg w-full overflow-auto  text-base shadow-lg ring-1 ring-black ring-opacity-5 focus:outline-none sm:text-sm">
               {filteredManufactures.length === 0 && query !== "" ? (
                 <div className="relative cursor-default select-none py-2 px-4 text-gray-700 bg-secondary">
                   Nothing Found, please contact our support.

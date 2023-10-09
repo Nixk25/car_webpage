@@ -6,7 +6,7 @@ import Button from "./Button";
 const Navbar = () => {
   return (
     <header className="w-full z-10 mx-auto ">
-      <nav className=" max-w-[1440px] flex justify-between items-center px-10 py-6">
+      <nav className=" flex justify-between items-center px-10 py-6">
         <Link href="/">
           <Image
             src="/logo.png"
@@ -19,7 +19,7 @@ const Navbar = () => {
 
         <Button
           type="button"
-          buttonStyles="text-primary bg-trasparent cursor-pointer"
+          buttonStyles="text-accent bg-trasparent cursor-pointer"
           text="Sign In"
           status="true"
         />

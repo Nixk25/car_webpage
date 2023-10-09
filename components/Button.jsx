@@ -2,7 +2,7 @@
 
 import React from "react";
 
-const Button = ({ text, buttonStyles, handleClick, type, status }) => {
+const Button = ({ text, buttonStyles, handleClick, type }) => {
   return (
     <button
       type={`${type}`}
