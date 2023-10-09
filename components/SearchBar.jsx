@@ -8,7 +8,7 @@ import { useRouter } from "next/navigation";
 const SearchButton = () => (
   <button
     type="submit"
-    className={`ml-3 cursor-pointer flex justify-center items-center `}
+    className={`ml-0.5 cursor-pointer flex justify-center items-center `}
   >
     <Image
       src="/magnifying-glass.svg"
@@ -59,7 +59,7 @@ const SearchBar = () => {
       onSubmit={handleSubmit}
       className="w-[500px] mb-3 relative flex gap-5"
     >
-      <div className="flex gap-5">
+      <div className="flex gap-5 sm:flex-row flex-col ">
         <div className="flex items-center justify-center w-[200px]">
           <SearchManufacturer
             manufacturer={manufacturer}

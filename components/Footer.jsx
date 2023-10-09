@@ -5,7 +5,7 @@ const Footer = () => {
   return (
     <footer className=" py-6 px-10 flex gap-10 flex-col border-t border-accent mt-10 h-max">
       <div className="flex flex-wrap w-full ">
-        <div className="w-full sm:flex-1 flex sm:items-start justify-center items-center flex-col mb-10">
+        <div className="w-full  sm:flex-1 flex sm:items-start justify-center items-center flex-col mb-10">
           <Image
             src="/logo.png"
             width={100}
@@ -16,7 +16,7 @@ const Footer = () => {
           <p className=" text-sm text-gray-500">Rentopia 2023</p>
           <p className="  text-sm text-gray-500">All Rights Reserved ©</p>
         </div>
-        <div className="flex-1 gap-20 flex justify-center sm:justify-end">
+        <div className="flex-1 sm:justify-end justify-center text-center gap-20 flex-wrap sm:flex-nowrap flex ">
           <div className="flex flex-col gap-2">
             <h5 className="cursor-pointer font-semibold mb-2">About</h5>
             <p className="cursor-pointer text-sm text-gray-500">How it works</p>
@@ -44,8 +44,8 @@ const Footer = () => {
           </div>
         </div>
       </div>
-      <div className="flex justify-between items-center mt-10">
-        <p className="text-sm text-gray-500">
+      <div className="flex justify-between items-center sm:flex-row flex-col text-center sm:text-left mt-10">
+        <p className="text-sm text-gray-500 sm:mb-0 mb-5">
           ©2023 Rentopia. All rights reserved
         </p>
         <div className="flex gap-5">
