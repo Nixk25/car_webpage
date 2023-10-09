@@ -21,8 +21,8 @@ const CarDetails = ({ car, isOpen, closeModal }) => {
           <div className="fixed inset-0  bg-black bg-opacity-25" />
         </Transition.Child>
 
-        <div className="fixed max-h-[90%]  top-[50%] left-[50%] translate-x-[-50%] translate-y-[-50%] overflow-y-auto">
-          <div className="flex max-h-[90%] items-center justify-center p-4 text-center">
+        <div className="fixed max-h-[90%] w-full max-w-[500px]  top-[50%] left-[50%] translate-x-[-50%] translate-y-[-50%] overflow-y-auto">
+          <div className="flex max-h-[90%] w-full items-center justify-center p-4 text-center">
             <Transition.Child
               as={Fragment}
               enter="ease-out duration-300"
@@ -32,7 +32,7 @@ const CarDetails = ({ car, isOpen, closeModal }) => {
               leaveFrom="opacity-100 scale-100"
               leaveTo="opacity-0 scale-95"
             >
-              <Dialog.Panel className="w-full max-w-md transform  overflow-hidden rounded-lg bg-white p-6 text-left align-middle shadow-xl transition-all">
+              <Dialog.Panel className="w-full  transform  overflow-hidden rounded-lg bg-white p-6 text-left align-middle shadow-xl transition-all">
                 <div className=" flex items-center justify-end">
                   <button
                     type="button"
