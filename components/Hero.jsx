@@ -21,7 +21,7 @@ const Hero = () => {
         <a href="#catalogue">
           <Button
             text="Explore Cars"
-            buttonStyles="bg-accent text-gray-100 rounded-full p-3 outline-none justify-start hover:rounded-tl-lg hover:rounded-br-lg hover:scale-105 ease duration-300 active:scale-90"
+            buttonStyles="bg-primary text-gray-100 rounded-full p-3 outline-none justify-start hover:rounded-tl-lg hover:rounded-br-lg hover:scale-105 ease duration-300 active:scale-90"
             type="button"
           />
         </a>

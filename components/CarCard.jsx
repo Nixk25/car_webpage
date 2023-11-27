@@ -16,7 +16,7 @@ const CarCard = ({ car }) => {
   return (
     <div
       onClick={() => setIsOpen(true)}
-      className="flex relative group  flex-col gap-5 w-[500px] m-auto mt-10 bg-white mb-10 rounded-lg p-4 border-2 border-transparent hover:border-secondary hover:scale-105  transition-all ease 300ms"
+      className=" cursor-pointer flex relative group  flex-col gap-5 w-[500px] m-auto mt-10 bg-white mb-10 rounded-lg p-4 border-2 border-transparent hover:border-primary hover:scale-105  transition-all ease 300ms"
     >
       <div className="w-full">
         <div className="font-semibold mb-1 capitalize ">

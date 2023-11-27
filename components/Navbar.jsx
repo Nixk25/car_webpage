@@ -19,7 +19,7 @@ const Navbar = () => {
 
         <Button
           type="button"
-          buttonStyles="text-accent bg-trasparent cursor-pointer"
+          buttonStyles="text-primary bg-trasparent cursor-pointer"
           text="Sign In"
           status="true"
         />

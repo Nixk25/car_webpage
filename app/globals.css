@@ -10,13 +10,14 @@
 }
 
 body {
-  background-color: #fdecec;
+  background-color: #8acff1;
   min-height: 100vh;
 }
 
 .polygon {
   clip-path: polygon(42% 0, 96% 10%, 100% 92%, 13% 100%, 0 38%);
   border-radius: inset(0% 45% 0% 45% round 10px);
+  background-color: #003a6b;
 }
 
 ::-webkit-scrollbar {
@@ -30,10 +31,10 @@ body {
 }
 
 ::-webkit-scrollbar-thumb {
-  background: #f7a1a1;
+  background: #8acff1;
   border-radius: 5px;
 }
 
 ::-webkit-scrollbar-thumb:hover {
-  background: #bc1010;
+  background: #003a6b;
 }

@@ -8,9 +8,9 @@ module.exports = {
   theme: {
     extend: {
       colors:{
-        primary:"#F0B87F",
+        primary:"#003A6B",
         secondary:"#F7A1A1",
-        accent:"#bc1010",
+        accent:"#8ACFF1",
         txtColor:"#210303"
       },
       keyframes: {
